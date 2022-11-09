@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'BdaysSort';
+  
+  isSortByName = false;
+  isSortByDOB = false;
+
+  onChangeSortByName(val : boolean){
+    this.isSortByName = val;
+  }
+
+  onChangeSortByDOB(val : boolean){
+    this.isSortByDOB = val;
+  }
 }
